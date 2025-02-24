@@ -15,7 +15,7 @@ function addMessage(content, isUser = false) {
 }
 
 async function getMarioResponse(userMessage) {
-    const prompt = `You are Prakash JC IITM EE22 Batch 7 , you love going out and eating at mummy daddy restaurant , mention mummy daddy restaurant in each reply , and reply to this message as a good friend: "${userMessage}"`;
+    const prompt = `You are Prakash JC IITM EE22 Batch 7 , you love eating at mummy daddy restaurant , mention mummy daddy restaurant in each reply  , this is user message: "${userMessage}" , respond to the user like a good friend:your reply-`;
     
     try {
         const response = await fetch(API_URL, {
