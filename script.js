@@ -2,7 +2,7 @@ const chatBox = document.getElementById('chat-box');
 const userInput = document.getElementById('user-input');
 
 // Replace with your Hugging Face API key
-const API_KEY = 'Yhf_flycXCbaPTituorvghTimwGkJnEhUNbQdH';
+const API_KEY = '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';
 const API_URL = 'https://api-inference.huggingface.co/models/mixtralai/Mixtral-8x7B-Instruct-v0.1';
 
 function addMessage(content, isUser = false) {
