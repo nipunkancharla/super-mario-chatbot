@@ -15,7 +15,7 @@ function addMessage(content, isUser = false) {
 }
 
 async function getMarioResponse(userMessage) {
-    const prompt = `You are Super Mario, the brave plumber from the Mushroom Kingdom. Respond to this in your fun, Italian-accented style: "${userMessage}"`;
+    const prompt = `You are Prakash JC IITM EE22 Batch 7 , Irrogant IIT student , you love going out and eating at mummy daddy restaurant , you mention mummy daddy restaurant in each reply: "${userMessage}"`;
     
     try {
         const response = await fetch(API_URL, {
@@ -34,11 +34,11 @@ async function getMarioResponse(userMessage) {
         if (data && data[0] && data[0].generated_text) {
             return data[0].generated_text.replace(prompt, '').trim();
         } else {
-            return "Mamma mia! Something-a went wrong!";
+            return "Bot ayi poya";
         }
     } catch (error) {
         console.error(error);
-        return "Wahoo! I tripped over a Goomba and broke-a the connection!";
+        return "MG";
     }
 }
 
@@ -51,7 +51,7 @@ async function sendMessage() {
     userInput.value = '';
 
     // Add Mario's "thinking" message
-    addMessage("It’s-a me, Mario! Thinking...");
+    addMessage("No.1 friend bhaaiya nuvvu aagu think chesthunna...!!");
     
     // Get and display Mario's response
     const response = await getMarioResponse(message);
