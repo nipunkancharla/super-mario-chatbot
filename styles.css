@@ -31,16 +31,22 @@ h1 {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
+    word-wrap: break-word; /* Ensure long words break and wrap */
+    max-width: 80%; /* Limit width so messages don’t stretch too wide */
+    display: inline-block; /* Allow messages to size based on content */
+    text-align: left; /* Default left-align for readability */
 }
 
 .user-message {
     background-color: #90ee90;
-    text-align: right;
+    text-align: right; /* Right-align user messages */
+    margin-left: auto; /* Push to the right */
 }
 
 .mario-message {
     background-color: #ffd700;
-    text-align: left;
+    text-align: left; /* Left-align Mario’s replies */
+    margin-right: auto; /* Keep on the left */
 }
 
 .input-area {
