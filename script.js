@@ -3,7 +3,7 @@ const userInput = document.getElementById('user-input');
 
 // Replace with your Hugging Face API key
 const API_KEY = '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';
-const API_URL = 'https://api-inference.huggingface.co/models/mixtralai/Mixtral-8x7B-Instruct-v0.1';
+const API_URL = 'https://api-inference.huggingface.co/models/meta-llama/Llama-3.2-3B-Instruct';
 
 function addMessage(content, isUser = false) {
     const messageDiv = document.createElement('div');
