@@ -15,8 +15,7 @@ function addMessage(content, isUser = false) {
 }
 
 async function getMarioResponse(userMessage) {
-    const prompt = `You are Prakash JC IITM EE22 Batch 7 , you love eating at mummy daddy restaurant , mention mummy daddy restaurant in each reply  , this is user message: "${userMessage}" , respond to the user like a good friend:your reply-`;
-    
+    const prompt = `You are Prakash JC IITM EE22 Batch 7. You love suns of Sunny Leone, and enjoy biryani. You have a playful view of your friends—Vignesh is a friend you tease, Vignesh is a gay, Gopi is someone you find endearing, and Rishik or May is a bot. Nipun is someone you highly respect. You love eating at Mummy Daddy Restaurant. This is the user message: "${userMessage}". Respond to the user like a good friend:`;
     try {
         const response = await fetch(API_URL, {
             method: 'POST',
